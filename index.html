@@ -1,0 +1,138 @@
+<!-- 
+  
+  This is the project-based Lab on the following concepts 
+  1. HTML Block elements
+  2. In line elements 
+
+
+Project description: Build a webpage on your hobbies
+
+Challenge 1: Use appropriate Block elements while building your webpage.
+
+Challenge 2: Use appropriate in line elements while building your hobbies webpage.
+
+Important note: Add comments above the tag to mention the HTML element type 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobbies</title>
+    <style>
+      /* Define the font size for the counter in the ordered list */
+      ol {
+        counter-reset: my-counter;
+        list-style-type: none;
+      }
+
+      li::before {
+        content: counter(my-counter) ".";
+        counter-increment: my-counter;
+        margin-right: 0.5em; /* Adjust the space between the counter and content */
+        font-size: 1.2em; /* Set the font size for the counter */
+        font-weight: bold; /* Optional: Set font weight if desired */
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Challenge 1: Using Block Elements -->
+    <div>
+      <h1><!-- Header -->My Hobbies</h1>
+
+      <p>
+        <!-- Paragraph -->I enjoy various activities in my free time. Here are
+        some of my favorite hobbies:
+      </p>
+      <ol>
+        <li>
+          <div class="hobby">
+            <!-- Division -->
+            <h3><!-- Header -->Playing Car Race games</h3>
+            <!-- Challenge 2: Using In-line Elements -->
+            <div>
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/dusk/64/car-racing.png"
+                alt="car-racing"
+              />
+              <p>
+                <!-- Paragraph -->Car racing is an exhilarating experience. I
+                often play racing games on my gaming console.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="hobby">
+            <!-- Division -->
+            <h3><!-- Header -->Watching Sports TV</h3>
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/stickers/100/track-and-field-skin-type-1.png"
+              alt="track-and-field-skin-type-1"
+            />
+            <p>
+              <!-- Paragraph -->I am a sports enthusiast. Watching sports on TV
+              allows me to stay updated with the latest matches and events.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="hobby">
+            <!-- Division -->
+            <h3><!-- Header -->Listening Music</h3>
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/100/external-songs-dance-flaticons-flat-flat-icons.png"
+              alt="external-songs-dance-flaticons-flat-flat-icons"
+            />
+            <p>
+              <!-- Paragraph -->Music is a great way to relax. I love listening
+              to my favorite tunes, especially when working or during leisure
+              time.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="hobby">
+            <!-- Division -->
+            <h3><!-- Header -->Playing football with friends</h3>
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/external-others-inmotus-design/100/external-Football-football-others-inmotus-design-2.png"
+              alt="external-Football-football-others-inmotus-design-2"
+            />
+            <p>
+              <!-- Paragraph -->Playing football is a favorite pastime of mine. Whether on the field or with friends, the thrill of the game is always exhilarating.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="hobby">
+            <!-- Division -->
+            <h3><!-- Header -->Watching about latest tech gadgets</h3>
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/color/100/gadgets.png"
+              alt="gadgets"
+            />
+            <p>
+              <!-- Paragraph -->Staying updated with the latest technology is a
+              passion. I enjoy watching videos and reading about the newest tech
+              gadgets on various platforms.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
